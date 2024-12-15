@@ -5,11 +5,11 @@ const transBoxEl = document.querySelector(".webBox");
 const bgEl = document.querySelector(".bgChange");
 const bgBoxEl = document.querySelector(".bgBox");
 const bgArrayEl = [
-  "/images/login__background01.jpg",
-  "/images/login__background02.jpg",
-  "/images/login__background03.jpg",
-  "/images/login__background04.jpg",
-  "/images/login__background05.jpg",
+  "images/login__background01.jpg",
+  "images/login__background02.jpg",
+  "images/login__background03.jpg",
+  "images/login__background04.jpg",
+  "images/login__background05.jpg",
 ];
 
 function handleOver(event) {
