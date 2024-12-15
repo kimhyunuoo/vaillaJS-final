@@ -25,6 +25,9 @@ function handleOver(event) {
   }
 }
 
+linkWebEl.addEventListener("mouseover", handleOver);
+linkWebEl.addEventListener("mouseout", handleOver);
+
 function handleBackGroundOver(event) {
   if (event.type === "mouseover") {
     if (!bgBoxEl.classList.contains("visible")) {
@@ -37,6 +40,9 @@ function handleBackGroundOver(event) {
     }
   }
 }
+bgEl.addEventListener("mouseover", handleBackGroundOver);
+bgEl.addEventListener("mouseout", handleBackGroundOver);
+
 let trackEl = "";
 function handleRandomBackGround() {
   let randomBg = bgArrayEl[Math.floor(Math.random() * bgArrayEl.length)];
@@ -52,10 +58,4 @@ function handleBackGroundClick() {
   document.body.style.backgroundPosition = "center center";
   document.body.style.background = `url(${randomBg})`;
 }
-
-linkWebEl.addEventListener("mouseover", handleOver);
-linkWebEl.addEventListener("mouseout", handleOver);
-
-bgEl.addEventListener("mouseover", handleBackGroundOver);
-bgEl.addEventListener("mouseout", handleBackGroundOver);
 bgEl.addEventListener("click", handleBackGroundClick);
