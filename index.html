@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum Version 1.0</title>
+    <script
+      src="https://kit.fontawesome.com/51ee0fa9b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- SCRIPT LINK -->
+    <script defer src="/js/header.js"></script>
+    <script defer src="/js/maintime.js"></script>
+    <script defer src="/js/fluctuation.js"></script>
+    <script defer src="/js/inputsize.js"></script>
+    <script defer src="/js/todolist.js"></script>
+    <script defer src="/js/weather.js"></script>
+  </head>
+  <body>
+    <!-- Header LINE -->
+    <!-- WEB SITE / WEATHER / BACKGROUND CHANGE -->
+    <header>
+      <div class="container">
+        <div class="links">
+          <a href="https://www.google.com" class="links__web">
+            <div class="web__icon">
+              <i class="fa-solid fa-globe fa-lg"></i>
+            </div>
+            <span>Web Search</span>
+          </a>
+        </div>
+        <div class="weather">
+          <div class="weather__icon">
+            <i class="fa-solid fa-cloud-sun fa-xl"></i>
+          </div>
+          <div class="weather__screen">
+            <div class="cityName">
+              <span></span>
+            </div>
+            <div class="cityWeather">
+              <span></span>
+            </div>
+            <div class="cityTemp">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="bgChange">
+          <div class="bgChange__icon">
+            <i class="fa-regular fa-image fa-lg"></i>
+          </div>
+          <span>
+            BackGround
+            <div>
+              <i class="fa-solid fa-question fa-2xs"></i>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="webBox"></div>
+      <div class="bgBox"></div>
+    </header>
+    <!-- MAIN TEXT GROUP LINE -->
+    <main>
+      <div class="textGroup">
+        <div class="textGroup__timeStamp"></div>
+        <div class="textGroup__textInput">
+          <span class="fluctuations"></span>
+          <input class="sizeInput" type="text" placeholder="Enter" required />
+        </div>
+      </div>
+      <!-- MAIN GOLDS BOARD SECTION -->
+      <div class="todoList">
+        <h3>What is your main goal for today ?</h3>
+        <form>
+          <input type="text" required />
+        </form>
+      </div>
+    </main>
+    <!-- TO-DO LIST SECTION -->
+    <footer>
+      <form>
+        <input
+          class="timeTodo"
+          type="text"
+          placeholder="Write a To-Do and Press"
+        />
+      </form>
+      <ul class="timeTodo__list"></ul>
+    </footer>
+  </body>
+</html>
