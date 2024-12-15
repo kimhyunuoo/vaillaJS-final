@@ -56,6 +56,6 @@ function handleBackGroundClick() {
   const randomBg = handleRandomBackGround();
 
   document.body.style.backgroundPosition = "center center";
-  document.body.style.background = `url(${randomBg})`;
+  document.body.style.background = `${randomBg}`;
 }
 bgEl.addEventListener("click", handleBackGroundClick);
