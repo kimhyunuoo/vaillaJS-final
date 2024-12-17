@@ -61,33 +61,35 @@
       <div class="webBox"></div>
       <div class="bgBox"></div>
     </header>
-    <!-- MAIN TEXT GROUP LINE -->
-    <main>
-      <div class="textGroup">
-        <div class="textGroup__timeStamp"></div>
-        <div class="textGroup__textInput">
-          <span class="fluctuations"></span>
-          <input class="sizeInput" type="text" placeholder="Enter" required />
+    <div class="flex__cotainer">
+      <main>
+        <div class="textGroup">
+          <div class="textGroup__timeStamp"></div>
+          <div class="textGroup__textInput">
+            <span class="fluctuations"></span>
+            <input class="sizeInput" type="text" placeholder="Enter" required />
+          </div>
         </div>
-      </div>
-      <!-- MAIN GOLDS BOARD SECTION -->
-      <div class="todoList">
-        <h3>What is your main goal for today ?</h3>
+        <!-- MAIN GOLDS BOARD SECTION -->
+        <div class="todoList">
+          <h3>What is your main goal for today ?</h3>
+          <form>
+            <input type="text" required />
+          </form>
+        </div>
+      </main>
+      <!-- TO-DO LIST SECTION -->
+      <footer>
         <form>
-          <input type="text" required />
+          <input
+            class="timeTodo"
+            type="text"
+            placeholder="Write a To-Do and Press"
+          />
         </form>
-      </div>
-    </main>
-    <!-- TO-DO LIST SECTION -->
-    <footer>
-      <form>
-        <input
-          class="timeTodo"
-          type="text"
-          placeholder="Write a To-Do and Press"
-        />
-      </form>
-      <ul class="timeTodo__list"></ul>
-    </footer>
+        <ul class="timeTodo__list"></ul>
+      </footer>
+    </div>
+    <!-- MAIN TEXT GROUP LINE -->
   </body>
 </html>
